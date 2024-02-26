@@ -20,12 +20,12 @@ adn then, to get a bash terminal within:
 docker exec -it mongo-app bin/sh
 ```
 
-Now we can access to `mongosh`, just typinig + ENTER it, we can see a `url` of server but it needs autorithation to access, so lets give it all it demands.
+Now we can access to `mongosh`, just writing it + ENTER it, we can see a `url` of server but it needs autorithation to access, so lets give it all it demands.
 
 Credential MongoDB are set and can be found in `docker-compose.yml`
 
 ```sh
-mongosh "mongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.1.4" --username root
+mongosh "mongodb://<credentials>@127.0.0.1:27bla...blaa" --username root
 ```
 
 then it shows up to write a password, that is save in your password `secret` and you have full access to the database MongoDB.
